@@ -21,12 +21,10 @@
         let ta = parseInt(prompt("Enter TA: "));
 
         document.getElementById("salary").innerHTML = "Your Salary is :- " + (salary);
-        document.getElementById("hra").innerHTML = "HRA is :- " + (hra);
-        document.getElementById("da").innerHTML = "DA is :- " + (da);
-        document.getElementById("da").innerHTML = "TA is :- " + (ta);
-        document.getElementById("hra").innerHTML = ((salary*10)/100);
-        document.getElementById("da").innerHTML = ((salary*5)/100);
-        document.getElementById("ta").innerHTML = ((salary*8)/100);
+        document.getElementById("hra").innerHTML = "HRA is :- " + (hra) + ((salary*10)/100);
+        document.getElementById("da").innerHTML = "DA is :- " + (da) + ((salary*5)/100);
+        document.getElementById("ta").innerHTML = "TA is :- " + (ta) +  ((salary*8)/100);
+       
 
         document.getElementById("ans").innerHTML = "Your Gorss Salary is :- " + (salary + hra + da + ta);
     </script>
