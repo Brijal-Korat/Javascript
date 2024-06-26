@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Array & its built-in function</title>
+</head>
+<body>
+    <script>
+        let studName = ["Kanika ", "Khanak ", "Priya "];
+
+        //Print array
+        document.write("Your array is :- " + studName + "<br><br>");
+
+
+        //Print array as per index number
+        document.write("studName[0] :- " + studName[0] + "<br>");
+        document.write("studName[1] :- " + studName[1] + "<br>");
+        document.write("studName[2] :- " + studName[2] + "<br><br>");
+
+
+        //Find length with using built-in function "length"
+        let len = studName.length;
+        document.write("Length of Array is :- " + len + "<br><br>");
+
+
+        //Print all elements of array with list [ul,ol]
+        let list = "<ul>";
+            for(let i=0 ; i<len ; i++){
+                list += "<li>" + studName[i] + "</li>";
+            }
+            list += "</ul>";
+        document.write(list);
+
+
+        //Add element at the last of array using PUSH
+        studName.push("Binal ", "Payal ")
+        document.write("Adding element using PUSH :- " + studName + "<br><br>");
+
+        
+        //Remove element at the last of array using POP
+        studName.pop();
+        document.write("Removing element using POP :- " , studName + "<br><br>");
+
+
+        //Add element at the start of array using SHIFT
+        studName.shift("Kirti");
+        document.write("Adding element using SHIFT :- " + studName + "<br><br>");
+
+
+        //Remove element at the start of array using UNSHIFT
+        studName.unshift();
+        document.write("Removing element using UNSHIFT :- " , studName + "<br><br>");
+
+        //Add value using SPLICE 
+        studName.splice(2,2,"Neha");
+        document.write("Adding slice using SPLICE :- ", studName + "<br><br>");
+        
+    </script>
+</body>
+</html>

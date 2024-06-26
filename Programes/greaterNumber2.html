@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Greater number in 4 numbers</title>
+</head>
+<body>
+
+    <!-- Using no parameter no return -->
+
+    <script>
+        function num(){
+            let j = parseInt(prompt("Enter 1st number :- "));
+            let k = parseInt(prompt("Enter 2nd number :- "));
+            let l = parseInt(prompt("Enter 3rd number :- "));
+            let m = parseInt(prompt("Enter 4th number :- "));
+
+            document.write("1st number : " + j);
+            document.write(`<br>`);
+            document.write("2nd number : " + k);
+            document.write(`<br>`);
+            document.write("3rd number : " + l);
+            document.write(`<br>`);
+            document.write("4th number : " + m);
+            document.write(`<br>`);
+            document.write(`<br>`);
+
+            if(j>k){
+                if(j>l){
+                    if(j>m){
+                        document.write("1st number is max..!");
+                    }
+                    else{
+                        document.write("4th number is max..!");
+                    }
+                }
+                else{
+                    if(l>m){
+                        document.write("3rd number is max..!");
+                    }
+                    else{
+                        document.write("4th number is max..!");
+                    }
+                }
+            }
+            else{
+                if(k>l){
+                    if(k>m){
+                        document.write("2nd number is max..!");
+                    }
+                    else{
+                        document.write("4th number is max..!");
+                    }
+                }
+                else{
+                    if(l>m){
+                        document.write("3rd number is max..!");
+                    }
+                    else{
+                        document.write("4th number is max..!");
+                    }
+                }
+            }
+        }
+
+        let ans = num();
+    </script>
+</body>
+</html>
